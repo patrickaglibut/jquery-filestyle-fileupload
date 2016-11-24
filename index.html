@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon" />
+    <title>Project Checklist</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+	<link rel="stylesheet" href="css/template-style.css">
+	<link rel="stylesheet" href="css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="css/bootstrap-treeview.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/jquery.fileupload.css">
+	<link rel="stylesheet" href="css/jquery.fileupload-ui.css">
+	<style type="text/css">
+		table td.controls {
+			text-align: right;
+		    background: #E5ECFF;
+		}
+		div.tooltip-inner {
+			max-width: none;
+			white-space: nowrap;
+		}
+		.treeview {
+			font-size: 13px;
+		}
+		.align-mid {
+			vertical-align: middle !important;
+		}
+		.bar {
+		    height: 18px;
+		    background: green;
+		}
+	</style>
+</head>
+<body>
+	<div id="all-content" class="with-sticky-footer">
+	 <!-- TOP NAV WITH LOGO -->
+	 <header>
+		<nav>
+	       <div class="line">
+	          <div class="s-12 l-2 spiLogo">&nbsp;</div>
+	          	          <div class="top-nav s-12 l-10 right" id="navMain">
+	             <p class="nav-text">Mobile Not Supported</p>
+	             <ul class="right">
+	                <li><a href="#"><i class="fa fa-home fa-2x nav-head-icon" aria-hidden="true"></i> Home</a></li>
+	             </ul>
+	          </div>
+	          	       </div>
+	    </nav>
+	 </header>
+		<div class="liner">&nbsp;</div>
+		<section>
+			<!-- FIRST BLOCK -->
+			<div id="first-block">
+				<div class="line">
+					<div class="margin-bottom">
+						<div class="margin">
+							<div>
+								<div class="s-1">&nbsp;</div>
+								<div class="s-10">
+									<table>
+										<thead>
+											<tr>
+												<th colspan="2">Filestyle not replacing value</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="align-mid" colspan="2">
+													<div class="input-group">
+														<input id="upload_relation" name="xlsfile" type="file" class="filestyle" data-buttonName="btn btn-warning" data-buttonBefore="true" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" data-placeholder="excel filename" data-url="/upload/path">
+								    					<span class="input-group-btn">
+								    						<button class="btn btn-success upload-item" type="button" data-tooltip="tooltip" title="upload new checklist relationship" id="btn_upload_relation"><i class="fa fa-btn fa-upload"></i></button>
+														</span>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="s-1">&nbsp;</div>
+							</div>
+							<div class="modal fade" id="listViewModal" tabindex="-1" role="dialog" aria-labelledby="listViewModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+											<h4 class="modal-title" id="myModalLabel">Project Checklist</h4>
+										</div>
+										<div class="modal-body" style="text-align: left;">
+											Loading data. Please wait...
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FOOTER -->
+		<div id="footer-content" class="sticky-footer">
+			<div class="liner">&nbsp;</div>
+			<footer>
+			<div class="line">
+				<div class="s-12 l-6">
+				</div>
+			</div>
+			</footer>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/promise.min.js"></script>
+	<script type="text/javascript" src="js/sweetalert2.min.js"></script>
+  	<script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+	<script type="text/javascript" src="js/jquery.iframe-transport.js"></script>
+	<script type="text/javascript" src="js/jquery.fileupload.js"></script>
+	<script type="text/javascript" src="js/bootstrap-filestyle.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-treeview.min.js"></script>
+	<script type="text/javascript" src="js/new-project-checklist.js"></script>
+</body>
+</html>
